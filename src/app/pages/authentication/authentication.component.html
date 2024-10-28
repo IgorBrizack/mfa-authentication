@@ -1,0 +1,21 @@
+<div class="auth__container">
+  <div class="qr__code_container" *ngIf="qrCodeGenerated">
+    <span>Código QR</span>
+  </div>
+  <div class="auth__labels">
+    <div class="auth__icon__container">
+      <i class="fa-solid fa-lock"></i>
+    </div>
+    <input
+      type="password"
+      class="auth__input"
+      placeholder="Código de autenticação"
+    />
+  </div>
+
+  <div class="buttons__container">
+    <button class="button__auth">Autenticar</button>
+  </div>
+
+  <a class="return__login" href="/login">Voltar</a>
+</div>
