@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AuthenticationComponent } from './pages/authentication/authentication.c
     LoginComponent,
     RegisterComponent,
     AuthenticationComponent,
+    SpinnerComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
