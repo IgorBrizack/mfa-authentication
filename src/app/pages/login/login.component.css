@@ -1,3 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
 .login__container {
   display: flex;
   flex-direction: column;
@@ -9,12 +21,14 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   align-items: center;
   gap: 5px;
+  background-color: white;
 }
 
 .login__labels {
   display: flex;
   width: 100%;
   height: 35px;
+  border: 1px solid #ccc;
 }
 
 .login__icon__container {
@@ -23,6 +37,7 @@
   justify-content: center;
   width: 45px;
   background-color: cadetblue;
+  border: 1px solid #ccc;
 }
 
 i {

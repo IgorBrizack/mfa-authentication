@@ -15,7 +15,6 @@ export class ToastComponent implements OnInit {
 
   ngOnInit() {
     this.toastService.toastState$.subscribe((toast) => {
-      console.log(toast);
       this.message = toast.message;
       this.isError = toast.isError;
       this.showToast();

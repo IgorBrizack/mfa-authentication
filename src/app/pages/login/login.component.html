@@ -1,34 +1,36 @@
-<div class="login__container">
-  <div class="login__labels">
-    <div class="login__icon__container">
-      <i class="fa-solid fa-user"></i>
+<div class="container">
+  <div class="login__container">
+    <div class="login__labels">
+      <div class="login__icon__container">
+        <i class="fa-solid fa-user"></i>
+      </div>
+      <input
+        type="text"
+        class="login__input"
+        placeholder="email"
+        [(ngModel)]="email"
+      />
     </div>
-    <input
-      type="text"
-      class="login__input"
-      placeholder="email"
-      [(ngModel)]="email"
-    />
-  </div>
 
-  <div class="login__labels">
-    <div class="login__icon__container">
-      <i class="fa-solid fa-lock"></i>
+    <div class="login__labels">
+      <div class="login__icon__container">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+      <input
+        type="password"
+        class="login__input"
+        placeholder="password"
+        [(ngModel)]="password"
+      />
     </div>
-    <input
-      type="password"
-      class="login__input"
-      placeholder="password"
-      [(ngModel)]="password"
-    />
-  </div>
 
-  <div class="buttons__container">
-    <button class="button__login" (click)="doLogin(email, password)">
-      Login
-    </button>
-    <button class="button__register">
-      <a routerLink="/register">Register</a>
-    </button>
+    <div class="buttons__container">
+      <button class="button__login" (click)="doLogin(email, password)">
+        Login
+      </button>
+      <button class="button__register">
+        <a routerLink="/register">Register</a>
+      </button>
+    </div>
   </div>
 </div>

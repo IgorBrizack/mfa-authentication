@@ -9,20 +9,18 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
+  email: string = '';
+  password: string = '';
   constructor(
     private userService: UserService,
     private router: Router,
     private toastService: ToastService
   ) {}
 
-  email: string = '';
-  password: string = '';
-
   ngOnInit(): void {}
 
   doLogin(email: string, password: string) {
-    console.log(email, password);
-    const response = this.userService.login(email, password).subscribe({
+    this.userService.login(email, password).subscribe({
       next: (data: any) => {
         if (data && data.token) {
           localStorage.setItem('core_token', data.token as any);
