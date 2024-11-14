@@ -8,6 +8,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { AuthenticationComponent } from './pages/authentication/authentication.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ToastComponent } from './components/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     RegisterComponent,
     AuthenticationComponent,
     SpinnerComponent,
+    HomeComponent,
+    ToastComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
