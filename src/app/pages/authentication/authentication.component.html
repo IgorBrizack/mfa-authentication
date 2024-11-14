@@ -1,21 +1,24 @@
 <div class="auth__container">
+  <app-spinner *ngIf="loading"></app-spinner>
   <div class="qr__code_container" *ngIf="qrCodeGenerated">
-    <span>Código QR</span>
+    <h3 class="qr__code_title">Scan the QR Code</h3>
+    <img src="{{ qrCode }}" alt="qr_code_authentication" />
   </div>
   <div class="auth__labels">
     <div class="auth__icon__container">
       <i class="fa-solid fa-lock"></i>
     </div>
     <input
-      type="password"
+      [(ngModel)]="totpCode"
+      type="text"
       class="auth__input"
-      placeholder="Código de autenticação"
+      placeholder="Authentication Code"
     />
   </div>
 
   <div class="buttons__container">
-    <button class="button__auth">Autenticar</button>
+    <button class="button__auth" (click)="validate()">Autenticate</button>
   </div>
 
-  <a class="return__login" href="/login">Voltar</a>
+  <a class="return__login" href="/login">Return</a>
 </div>

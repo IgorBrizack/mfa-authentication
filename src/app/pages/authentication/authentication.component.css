@@ -69,3 +69,10 @@ a {
   align-self: flex-end;
   margin-right: 5px;
 }
+
+.qr__code_title {
+  text-align: center;
+  font-size: smaller;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
