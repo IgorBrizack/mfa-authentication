@@ -34,6 +34,34 @@
   animation: pulse 2s infinite;
 }
 
+.logout__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.logout__btn:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logout__btn:active {
+  transform: translateY(0) scale(1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
 @keyframes fadeInDown {
   0% {
     opacity: 0;

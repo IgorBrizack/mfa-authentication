@@ -97,4 +97,9 @@ export class AuthenticationComponent implements OnInit {
         },
       });
   }
+
+  doLogout() {
+    localStorage.removeItem('core_token');
+    this.router.navigate(['/login']);
+  }
 }

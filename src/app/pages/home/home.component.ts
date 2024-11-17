@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IUserJwt } from 'src/app/interfaces';
 import { UserService } from 'src/app/services/user.service';
 
@@ -9,7 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class HomeComponent implements OnInit {
   userName: string = '';
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private router: Router) {}
 
   ngOnInit(): void {
     const token = localStorage.getItem('core_token');
@@ -17,5 +18,10 @@ export class HomeComponent implements OnInit {
     const data = this.userService.decodeToken(token as string) as IUserJwt;
 
     this.userName = data.name;
+  }
+
+  doLogout() {
+    localStorage.removeItem('core_token');
+    this.router.navigate(['/login']);
   }
 }

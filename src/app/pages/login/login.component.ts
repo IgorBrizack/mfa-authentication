@@ -17,7 +17,12 @@ export class LoginComponent implements OnInit {
     private toastService: ToastService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const token = localStorage.getItem('core_token');
+    if (token) {
+      this.router.navigate(['/home']);
+    }
+  }
 
   doLogin(email: string, password: string) {
     this.userService.login(email, password).subscribe({
@@ -32,10 +37,5 @@ export class LoginComponent implements OnInit {
         this.toastService.showError(err.error.error);
       },
     });
-  }
-
-  doLogout() {
-    localStorage.removeItem('core_token');
-    this.router.navigate(['/login']);
   }
 }
