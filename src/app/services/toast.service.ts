@@ -11,4 +11,8 @@ export class ToastService {
   showError(message: string) {
     this.toastSubject.next({ message, isError: true });
   }
+
+  showSuccess(message: string) {
+    this.toastSubject.next({ message, isError: false });
+  }
 }

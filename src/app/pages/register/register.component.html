@@ -4,25 +4,40 @@
       <div class="register__icon__container">
         <i class="fa-solid fa-star"></i>
       </div>
-      <input type="text" class="register__input" placeholder="Full Name" />
+      <input
+        type="text"
+        class="register__input"
+        placeholder="Full Name"
+        [(ngModel)]="name"
+      />
     </div>
 
     <div class="register__labels">
       <div class="register__icon__container">
         <i class="fa-solid fa-user"></i>
       </div>
-      <input type="text" class="register__input" placeholder="email" />
+      <input
+        type="text"
+        class="register__input"
+        placeholder="email"
+        [(ngModel)]="email"
+      />
     </div>
 
     <div class="register__labels">
       <div class="register__icon__container">
         <i class="fa-solid fa-lock"></i>
       </div>
-      <input type="password" class="register__input" placeholder="password" />
+      <input
+        type="password"
+        class="register__input"
+        placeholder="password"
+        [(ngModel)]="password"
+      />
     </div>
 
     <div class="buttons__container">
-      <button class="button__register">Registrar</button>
+      <button class="button__register" (click)="register()">Register</button>
     </div>
 
     <a class="return__login" href="/login">Return</a>

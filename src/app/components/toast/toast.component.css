@@ -3,7 +3,7 @@
   top: 20px;
   right: 20px;
   padding: 16px 24px;
-  font-family: Arial, sans-serif; /* Fonte moderna e legível */
+  font-family: Arial, sans-serif;
   font-size: 15px;
   color: #fff;
   background-color: #333;
@@ -11,25 +11,29 @@
   opacity: 0.95;
   z-index: 1000;
   width: 280px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Sombra leve para destacar o toast */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Animação de transição */
+  transition: opacity 0.5s ease, transform 0.5s ease;
   transform: translateY(-20px);
 }
 
 .toast-show {
   opacity: 1;
-  transform: translateY(0); /* Exibe o toast */
+  transform: translateY(0);
 }
 
 .toast-hide {
   opacity: 0;
-  transform: translateY(-20px); /* Oculta o toast */
+  transform: translateY(-20px);
 }
 
 .toast-error {
-  background-color: #e74c3c; /* Cor para mensagens de erro */
+  background-color: #e74c3c;
+}
+
+.toast-success {
+  background-color: #2ecc71;
 }
 
 .toast-icon {
