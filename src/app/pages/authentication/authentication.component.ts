@@ -73,6 +73,7 @@ export class AuthenticationComponent implements OnInit {
         },
         error: (err) => {
           this.loading = false;
+          this.qrCodeGenerated = true;
           this.toastService.showError(err.error.error);
         },
       });
