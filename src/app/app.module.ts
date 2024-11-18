@@ -11,6 +11,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ToastComponent } from './components/toast/toast.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SpinnerComponent,
     HomeComponent,
     ToastComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
