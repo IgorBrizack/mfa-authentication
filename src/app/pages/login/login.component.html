@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="login__container">
+    <form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+      <div class="login__field__context">
+        <div class="login__labels">
+          <div class="login__icon__container">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <input
+            type="text"
+            class="login__input"
+            placeholder="Email"
+            formControlName="email"
+          />
+        </div>
+        <div
+          class="error"
+          *ngIf="
+            loginForm.get('email')?.touched && loginForm.get('email')?.invalid
+          "
+        >
+          <p *ngIf="loginForm.get('email')?.hasError('required')">
+            Email is required.
+          </p>
+          <p *ngIf="loginForm.get('email')?.hasError('email')">
+            Email is not valid.
+          </p>
+        </div>
+      </div>
+      <div class="login__field__context">
+        <div class="login__labels">
+          <div class="login__icon__container">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <input
+            type="password"
+            class="login__input"
+            placeholder="Password"
+            formControlName="password"
+          />
+        </div>
+        <div
+          class="error"
+          *ngIf="
+            loginForm.get('password')?.touched &&
+            loginForm.get('password')?.invalid
+          "
+        >
+          <p *ngIf="loginForm.get('password')?.hasError('required')">
+            Password is required.
+          </p>
+          <p *ngIf="loginForm.get('password')?.hasError('minlength')">
+            Password must be at least 6 characters.
+          </p>
+        </div>
+      </div>
+
+      <div class="buttons__container">
+        <button
+          class="button__login"
+          type="submit"
+          [disabled]="loginForm.invalid"
+        >
+          Login
+        </button>
+        <button class="button__register" [routerLink]="'/register'">
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

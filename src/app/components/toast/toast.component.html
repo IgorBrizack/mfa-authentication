@@ -1,0 +1,5 @@
+<div *ngIf="isVisible" class="toast toast-show" [class.toast-error]="isError">
+  <span class="toast-icon">⚠️</span>
+  <span>{{ message }}</span>
+  <span class="toast-close" (click)="isVisible = false">&times;</span>
+</div>
