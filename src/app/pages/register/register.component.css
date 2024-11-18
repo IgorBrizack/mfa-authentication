@@ -16,21 +16,20 @@
   width: 100%;
   max-width: 400px;
   margin: auto;
-  margin-top: 50px;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   align-items: center;
-  gap: 20px;
   background-color: white;
 }
 
 .register__labels {
   display: flex;
-  width: 100%;
-  height: 45px;
+  width: 350px;
+  height: 40px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  position: relative;
 }
 
 .register__icon__container {
@@ -54,7 +53,6 @@ i {
   background-color: #f7f7f7;
   border: none;
   border-radius: 0 5px 5px 0;
-  font-size: 16px;
 }
 
 .register__labels input:focus {
@@ -70,12 +68,11 @@ i {
 
 .button__register {
   width: 100%;
-  height: 45px;
+  height: 40px;
   border-radius: 5px;
   background-color: #4e54c8;
   color: white;
   font-weight: bold;
-  font-size: 16px;
   border: none;
   transition: background-color 0.3s ease;
 }
@@ -96,4 +93,11 @@ a {
   margin-right: 5px;
   color: #333;
   text-decoration: underline;
+}
+
+.error {
+  color: #e63946;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: 5px;
 }

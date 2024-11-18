@@ -27,7 +27,6 @@
   width: 100%;
   position: relative;
   height: 40px;
-  z-index: 1;
 }
 
 .login__icon__container {
@@ -39,7 +38,6 @@
   background-color: #4e54c8;
   color: white;
   border-radius: 5px 0 0 5px;
-  z-index: 0;
   position: absolute;
 }
 
