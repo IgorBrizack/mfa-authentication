@@ -13,22 +13,21 @@
 .login__container {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
   margin: auto;
-  margin-top: 200px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  align-items: center;
-  gap: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   background-color: white;
 }
 
 .login__labels {
   display: flex;
   width: 100%;
-  height: 35px;
-  border: 1px solid #ccc;
+  position: relative;
+  height: 40px;
+  z-index: 1;
 }
 
 .login__icon__container {
@@ -36,57 +35,74 @@
   align-items: center;
   justify-content: center;
   width: 45px;
-  background-color: cadetblue;
-  border: 1px solid #ccc;
+  height: 40px;
+  background-color: #4e54c8;
+  color: white;
+  border-radius: 5px 0 0 5px;
+  z-index: 0;
+  position: absolute;
 }
 
 i {
-  color: white;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .login__labels input {
   width: 100%;
-  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   outline: none;
-  background-color: rgb(240, 248, 246);
+  background-color: #f4f4f4;
+  transition: border-color 0.3s ease;
+  padding-left: 50px;
+}
+
+.login__labels input:focus {
+  border-color: #4e54c8;
+  background-color: #fff;
+}
+
+.error {
+  color: #e63946;
+  font-size: 0.85rem;
+  text-align: left;
+  margin-top: 5px;
 }
 
 .buttons__container {
-  width: 100%;
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
 }
 
+.button__login,
 .button__register {
-  width: 100%;
-  height: 35px;
+  width: 48%;
+  height: 40px;
   border-radius: 5px;
-  background-color: cadetblue;
+  background-color: #4e54c8;
   color: white;
   font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.button__login {
-  width: 100%;
-  height: 35px;
-  border-radius: 5px;
-  background-color: cadetblue;
-  color: white;
-  font-weight: bold;
-}
-
+.button__login:hover,
 .button__register:hover {
-  background-color: rgb(0, 128, 128);
+  background-color: #393d8e;
   cursor: pointer;
-}
-
-.button__login:hover {
-  background-color: rgb(0, 128, 128);
-  cursor: pointer;
+  transform: scale(1.05);
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login__field__context {
+  height: 70px;
 }

@@ -10,6 +10,7 @@ import { AuthenticationComponent } from './pages/authentication/authentication.c
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ToastComponent } from './components/toast/toast.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,13 @@ import { ToastComponent } from './components/toast/toast.component';
     HomeComponent,
     ToastComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
