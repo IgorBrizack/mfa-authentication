@@ -101,3 +101,7 @@ a {
   text-align: left;
   margin-top: 5px;
 }
+
+.register__field__context {
+  height: 70px;
+}
