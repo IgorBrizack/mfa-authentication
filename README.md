@@ -18,7 +18,7 @@ This project is created with Angular to build the Frontend. The goal of this pro
 1.  **Clone the repository**
 
 ```
-git@github.com:IgorBrizack/mfa-authentication-front.git
+git clone git@github.com:IgorBrizack/mfa-authentication-front.git
 ```
 
 2. **Run with Docker**
