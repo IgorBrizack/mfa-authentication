@@ -1,10 +1,9 @@
 # Multi Factor Authentication
 
 <div style="display: flex; gap: 10px;">
-  <img src="./src/assets/login_screen.png" alt="login_screen" width="350" height="200">
-  <img src="./src/assets/register_screen.png" alt="register_screen" width="350" height="200">
-  <img src="./src/assets/qr_code_screen.png" alt="qr_screen" width="350" height="200">
-  <img src="./src/assets/home_screen.png" alt="home_screen" width="350" height="200">
+  <img src="./src/assets/login_screen.png" alt="login_screen" width="320" height="200">
+  <img src="./src/assets/qr_code_screen.png" alt="qr_screen" width="320" height="200">
+  <img src="./src/assets/home_screen.png" alt="home_screen" width="320" height="200">
 </div>
 
 **`En-US`**
