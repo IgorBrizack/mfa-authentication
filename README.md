@@ -49,7 +49,7 @@ Este projeto foi criado com Angular para construir o Frontend. O objetivo deste 
 1. **Clone o repositório**:
 
    ```bash
-   git@github.com:IgorBrizack/mfa-authentication-front.git
+   git clone git@github.com:IgorBrizack/mfa-authentication-front.git
    ```
 
 2. **Execute com Docker**:
