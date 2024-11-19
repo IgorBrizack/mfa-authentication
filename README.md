@@ -1,18 +1,17 @@
 # Multi Factor Authentication
 
-<div style="display: flex; gap: 10px; margin-bottom: 10px">
-  <img src="./src/assets/login_screen.png" alt="login_screen" width="320" height="200">
-  <img src="./src/assets/qr_code_screen.png" alt="qr_screen" width="320" height="200">
-  <img src="./src/assets/home_screen.png" alt="home_screen" width="320" height="200">
-</div>
-
-</br>
-
 **`En-US`**
 
 ## About this project
 
 This project is created with Angular to build the Frontend. The goal of this project is to implement elements that simulate a real interaction for logging into a web application with two-factor authentication. In this project, you will learn how to implement guards, services, create components, and design views. To have the full experience on your computer you will need to clone the [Backend](https://github.com/IgorBrizack/mfa-authentication-backend).
+
+<div style="display: flex; gap: 10px; margin-bottom: 10px">
+  <img src="./src/assets/login_screen.png" alt="login_screen" width="320" height="200">
+  <img src="./src/assets/qr_code_screen.png" alt="qr_screen" width="320" height="200">
+  <img src="./src/assets/home_screen.png" alt="home_screen" width="320" height="200">
+</div>
+</br>
 
 ## Steps
 
