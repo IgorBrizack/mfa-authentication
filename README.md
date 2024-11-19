@@ -1,27 +1,68 @@
-# Frontend
+# Multi Factor Authentication
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+**`En-US`**
 
-## Development server
+## About this project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is created with Angular to build the Frontend. The goal of this project is to implement elements that simulate a real interaction for logging into a web application with two-factor authentication. In this project, you will learn how to implement guards, services, create components, and design views. To have the full experience on your computer you will need to clone the [Backend](https://github.com/IgorBrizack/mfa-authentication-backend).
 
-## Code scaffolding
+<div style="display: flex; gap: 10px; margin-bottom: 10px">
+  <img src="./src/assets/login_screen.png" alt="login_screen" width="320" height="200">
+  <img src="./src/assets/qr_code_screen.png" alt="qr_screen" width="320" height="200">
+  <img src="./src/assets/home_screen.png" alt="home_screen" width="320" height="200">
+</div>
+</br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Steps
 
-## Build
+1.  **Clone the repository**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+git@github.com:IgorBrizack/mfa-authentication-front.git
+```
 
-## Running unit tests
+2. **Run with Docker**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+docker-compose up -d --build
+```
 
-## Running end-to-end tests
+3. **Run with Node**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm install
+ng start
+```
 
-## Further help
+4. **Start the [Backend](https://github.com/IgorBrizack/mfa-authentication-backend) and setup your envs**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+**`Pt-BR`**
+
+# Sobre este projeto
+
+Este projeto foi criado com Angular para construir o Frontend. O objetivo deste projeto é implementar elementos que simulem uma interação real para fazer login em uma aplicação web com autenticação de dois fatores. Neste projeto, você aprenderá a implementar guards, services, criar componentes e projetar views. Para ter a experiência completa em seu computador será necessário clonar o [Backend](https://github.com/IgorBrizack/mfa-authentication-backend).
+
+## Passos
+
+1. **Clone o repositório**:
+
+   ```bash
+   git@github.com:IgorBrizack/mfa-authentication-front.git
+   ```
+
+2. **Execute com Docker**:
+
+   ```bash
+   docker-compose up -d --build
+   ```
+
+3. **Execute com Node**:
+
+   ```bash
+   npm install
+   ng start
+   ```
+
+4. **Inicie o [Backend](https://github.com/IgorBrizack/mfa-authentication-backend) e configure suas variáveis de ambiente.**
