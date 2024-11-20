@@ -33,8 +33,11 @@ docker-compose up -d --build
 npm install
 ng start
 ```
-
-4. **Start the [Backend](https://github.com/IgorBrizack/mfa-authentication-backend) and setup your envs**
+4. **Access your localhot 4200**
+```
+http://localhost:4200
+```
+5. **Start the [Backend](https://github.com/IgorBrizack/mfa-authentication-backend) and setup your envs**
 
 ---
 
@@ -64,5 +67,9 @@ Este projeto foi criado com Angular para construir o Frontend. O objetivo deste 
    npm install
    ng start
    ```
+4. **Acesse seu localhost 4200**
+```
+http://localhost:4200
+```
 
-4. **Inicie o [Backend](https://github.com/IgorBrizack/mfa-authentication-backend) e configure suas variáveis de ambiente.**
+5. **Inicie o [Backend](https://github.com/IgorBrizack/mfa-authentication-backend) e configure suas variáveis de ambiente.**
